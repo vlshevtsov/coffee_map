@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const mongoString = process.env.REACT_APP_MONGO_URI
 const routes = require('./routes/routes')
 const app = express()
-const port = 80
+const port = 443
 
 const whitelist = ["http://localhost:3000"]
 const corsOptions = {
