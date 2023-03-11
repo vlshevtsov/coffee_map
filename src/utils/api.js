@@ -18,7 +18,7 @@ class Api {
 
 const api = new Api(
   {
-    baseUrl: 'http://localhost:8080/api',
+    baseUrl: '/api',
   }
 );
 
