@@ -27,7 +27,7 @@ const database = mongoose.connection;
 database.on('error', (error) => console.log(error))
 database.once('connected', () => console.log('Database Connected'))
 
-app.use('/api', routes);
+app.use('/coffee_map/api', routes);
 app.use(express.json());
 
 app.listen(port, () => console.log('Server is running...'))

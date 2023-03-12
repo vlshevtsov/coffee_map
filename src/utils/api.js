@@ -22,7 +22,7 @@ class Api {
 
 const api = new Api(
   {
-    baseUrl: '/api',
+    baseUrl: '/coffee_map/api',
   }
 );
 
