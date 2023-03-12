@@ -113,7 +113,6 @@ export default function Map() {
         <div className="heading">
           <h1>Tbilisi specialty coffee</h1>
         </div>
-        {console.log(places)}
         <ul id="listings" className="listings">
           {places.map((place) => (
             <Place

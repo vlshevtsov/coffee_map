@@ -18,7 +18,7 @@ class Api {
 
 const api = new Api(
   {
-    baseUrl: '/api',
+    baseUrl: 'http://127.0.0.1:443/api',
   }
 );
 
