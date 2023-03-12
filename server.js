@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const mongoString = process.env.REACT_APP_MONGO_URI
 const routes = require('./routes/routes')
 const app = express()
-const port = 443
+const port = 4000
 
 const whitelist = ["http://localhost:3000"]
 const corsOptions = {
@@ -30,4 +30,4 @@ database.once('connected', () => console.log('Database Connected'))
 app.use('/api', routes);
 app.use(express.json());
 
-app.listen(port, '0.0.0.0', () => console.log(`Server is running...`))
+app.listen(port, () => console.log('Server is running...'))

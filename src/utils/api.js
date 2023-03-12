@@ -11,7 +11,11 @@ class Api {
   }
 
   getPlaces = () => {
-    return fetch(`${this._url}/places`)
+    return fetch(`${this._url}/places`, {
+      headers:{
+        "accepts":"application/json"
+      }
+    })
     .then(this._handleResponse)
   }
 }
